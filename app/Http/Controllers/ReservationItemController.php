@@ -22,7 +22,6 @@ class ReservationItemController extends Controller
     {
         // return ReservationItem::create($request->all());
         $reservationItem = ReservationItem::create($request->all());
-
         return response()->json($reservationItem, 201);
     }
 
@@ -34,7 +33,6 @@ class ReservationItemController extends Controller
         // return $article;
 
         $reservationItem->update($request->all());
-
         return response()->json($reservationItem, 200);
     }
 
