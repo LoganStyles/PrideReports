@@ -18,7 +18,7 @@ class ReservationItem extends Model
          'client_type',
          'client_name',
          'agency_name',
-         'agency_name',
+         'agency_contact',
          'guest1',
          'guest2',
          'guest_count',

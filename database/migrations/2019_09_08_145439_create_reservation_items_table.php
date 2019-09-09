@@ -26,7 +26,7 @@ class CreateReservationItemsTable extends Migration
             $table->enum('client_type',['person','group'])->default('person');
             $table->string('client_name');
             $table->string('agency_name')->nullable();
-            $table->text('agency_name')->nullable();
+            $table->text('agency_contact')->nullable();
             $table->string('guest1')->nullable();
             $table->string('guest2')->nullable();
             $table->integer('guest_count')->nullable()->default(0);
