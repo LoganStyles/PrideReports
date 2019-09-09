@@ -32,7 +32,7 @@ class LoginTest extends TestCase
 
     public function testUserLoginsSuccessfully()
     {
-        $user = factory(User::class)->create([
+        $user = factory(User::class)->create([//don't understand how User->create is ccald cos it seems not to exist
             'email' => 'testlogin@user.com',
             'password' => bcrypt('toptal123'),
         ]);
